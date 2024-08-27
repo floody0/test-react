@@ -4,7 +4,7 @@ const ProductPage = (props) => {
 
   return (
     <div>
-        {props.id}
+        dsdsdsd
     </div>
   )
 }

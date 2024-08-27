@@ -19,6 +19,7 @@ const ProductList = () => {
     return (
         <div className={cl.product_list}>
             {products.map( product => <ProductCard
+                key={product.id}
                 id={product.id} 
                 name={product.name} 
                 shortDescription={product.short_description} 

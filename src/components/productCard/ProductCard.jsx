@@ -6,7 +6,7 @@ import ProductPage from '../../pages/ProductPage'
 const ProductCard = (props) => {
 
   return (
-    <Link className={cl.products__item} to={<ProductPage/>}>
+    <Link className={cl.products__item}>
         <img className={cl.product__img} src={props.img} alt="Нет картинки" />
         <div className={cl.product__info}>
           <p className={cl.product__title}>{props.name}</p>
