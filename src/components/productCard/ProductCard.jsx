@@ -1,12 +1,11 @@
 import React from 'react'
 import cl from './ProductCard.module.css'
 import { Link } from 'react-router-dom'
-import ProductPage from '../../pages/ProductPage'
 
 const ProductCard = (props) => {
 
   return (
-    <Link className={cl.products__item}>
+    <Link className={cl.products__item} to={`/products/${props.slug}`}>
         <img className={cl.product__img} src={props.img} alt="Нет картинки" />
         <div className={cl.product__info}>
           <p className={cl.product__title}>{props.name}</p>
