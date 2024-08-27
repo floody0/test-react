@@ -1,0 +1,7 @@
+.cl{
+    height: 50px;
+    box-shadow: 0 0 4px #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
