@@ -1,20 +1,16 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ProductCard from '../productCard/ProductCard'
 import cl from './ProductList.module.css'
+import useFetch from '../../hooks/useFetch'
+import Loader from '../ui/myLoader/Loader'
 
 const ProductList = () => {
 
-    const [products, setProducts] =  useState([])
+    const {data: products, isLoading, error} = useFetch('https://kotyatashop.com/wp-json/api/get-short-products')
 
-    useEffect(()=>{
-        const fetchProducts = async () => {
-            const response = await axios.get('https://kotyatashop.com/wp-json/api/get-short-products')
-            setProducts(response.data.data)
-        }
-        fetchProducts()
-    },[])
-
+    if (isLoading) {
+        return <Loader/>
+    }
 
     return (
         <div className={cl.product_list}>

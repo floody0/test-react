@@ -1,0 +1,137 @@
+.cart{
+    width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.cart__header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cart__title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 57.6px;
+    letter-spacing: -0.8999999165534973px;
+    text-align: center;
+    
+}   
+.cart__backArrow{
+    position: absolute;
+    left: 0;
+}
+.cart__backArrow:hover svg{
+    fill: rgba(169, 125, 243, 1);
+}
+
+
+
+.cart__main{
+    display: flex;
+    flex-direction: column;
+}
+.cart__mainTitle{
+    display: flex;
+}
+.cart__mainTitle p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    letter-spacing: -0.8999999165534973px;
+    text-align: left;
+}
+.cart__mainTitle p:nth-child(2){
+    margin-left: 930px;
+}
+.cart__mainTitle p:nth-child(3){
+    margin-left: 70px;
+}
+.cart__products{
+    display: flex;
+    flex-direction: column;
+}
+.cart__product{
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-left: none;
+    border-right: none;
+
+    min-height: 165px;
+    padding: 13px 0;
+    box-sizing: border-box;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.cart__productImg{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    
+}
+.cart__productTitle{
+    width: 350px;
+    margin: 15px 0 0 30px;
+    align-self: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.89px;
+    text-align: left;
+    color: rgba(39, 39, 39, 1);
+}
+.cart__counter{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.cart__productPrice{
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: -0.8999999165534973px;   
+}
+.cart__delete{
+    margin-left: 45px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.cart__footer{
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cart__totalPrice{
+    color: rgba(39, 39, 39, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: -0.8999999165534973px;
+    text-align: left;
+    
+}
+.cart__totalPrice span{
+    font-weight: 700;
+}
+.cart__buttons{
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 50px;
+}

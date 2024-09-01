@@ -1,0 +1,31 @@
+.button{
+    width: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    background: transparent;
+    color: rgba(58, 73, 128, 1);
+    text-align: center;
+    cursor: pointer;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 92px;
+    height: 44px;
+    border-radius: 8px;
+    background: rgba(243, 243, 243, 1);    
+}
+.number{
+    width: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    
+    color: rgba(58, 73, 128, 1);
+}

@@ -1,7 +1,24 @@
-.cl{
+.navbar{
     height: 50px;
+    padding: 0 15px;
     box-shadow: 0 0 4px #000;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
+}
+.navbar__cart{
+    padding: inherit;
+    position: absolute;
+    right: 0;
+}
+.navbar__link{
+    text-decoration: none;
+    text-underline-offset: 3px;
+}
+
+.navbar__link:hover, .navbar__link:hover svg{
+    text-decoration: underline;
+    color: rgba(169, 125, 243, 1);
+    fill: rgba(169, 125, 243, 1);
 }

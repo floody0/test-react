@@ -1,0 +1,13 @@
+.myButton{
+    width: 185px;
+    height: 44px;
+    border-radius: 8px;
+
+    color: rgba(255, 255, 255, 1);
+    background: rgba(169, 125, 243, 1);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+}
